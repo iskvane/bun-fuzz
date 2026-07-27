@@ -1,0 +1,15 @@
+[package]
+name = "garage-synth"
+version = "0.1.0"
+edition = "2021"
+description = "Audio-Engine fuer Garage Bund, ueber Bun FFI angebunden"
+
+[lib]
+name = "garage_synth"
+crate-type = ["cdylib"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"

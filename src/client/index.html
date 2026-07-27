@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bun Fuzz</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Bun&nbsp;Fuzz</h1>
+      <div class="topbar-meta">
+        <span class="room-chip">Room: <b id="room-name">–</b></span>
+        <span id="status" class="status idle">not connected</span>
+      </div>
+    </header>
+
+    <!-- Start screen: the click here is what unlocks the AudioContext. -->
+    <section id="gate" class="gate">
+      <div class="gate-card">
+        <h2>Join the Band</h2>
+        <p>
+          Four roles, a server beat, a shared sound: Guitar, Bass,
+          Drums and Keys. The server generates the sound, everyone hears exactly the same.
+        </p>
+        <label>
+          Name
+          <input id="name-input" type="text" placeholder="What's your name?" maxlength="24" />
+        </label>
+        <label>
+          Room
+          <input id="room-input" type="text" value="garage" maxlength="32" />
+        </label>
+        <button id="enter" class="primary">Join the Band</button>
+      </div>
+    </section>
+
+    <main id="main" hidden>
+      <section class="transport">
+        <button id="play-toggle" class="active">Click off</button>
+        <label class="ctl">
+          <span id="bpm-value">100 BPM</span>
+          <input id="bpm" type="range" min="60" max="180" step="1" value="100" />
+        </label>
+        <label class="ctl">
+          <span>Grid</span>
+          <select id="grid">
+            <option value="4">Quarter</option>
+            <option value="8">Eighth</option>
+            <option value="16" selected>Sixteenth</option>
+          </select>
+        </label>
+        <div id="beats" class="beats"></div>
+        <div class="master-meter">
+          <div id="master-fill" class="master-fill"></div>
+        </div>
+        <label class="ctl">
+          <span>Volume</span>
+          <input id="volume" type="range" min="0" max="1.5" step="0.05" value="0.9" />
+        </label>
+        <button id="panic" class="ghost">all off</button>
+      </section>
+
+      <section id="roles" class="roles"></section>
+
+      <div class="columns">
+        <section id="stage" class="stage"></section>
+
+        <aside class="side">
+          <div class="panel">
+            <h3>Part of the band</h3>
+            <ul id="players-list" class="players"></ul>
+          </div>
+
+          <div class="panel">
+            <h3>Mixer</h3>
+            <div id="mixer" class="mixer"></div>
+          </div>
+
+          <div class="panel">
+            <h3>Songs</h3>
+            <div class="save-row">
+              <input id="save-title" type="text" placeholder="Title" maxlength="60" />
+              <button id="save" class="mini">save</button>
+            </div>
+            <ul id="songs-list" class="songs"></ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>
