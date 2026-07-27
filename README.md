@@ -27,6 +27,8 @@ Open the browser, enter a name, grab a role, start playing. For a real
 session, just send several people to the same URL — the room lives in the
 query parameter (`?room=garage`).
 
+![](./docs/screenshot.png)
+
 ## The four roles
 
 | Role | Controls |
