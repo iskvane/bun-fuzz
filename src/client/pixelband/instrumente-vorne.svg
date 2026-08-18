@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" shape-rendering="crispEdges">
+  <title>Pixelband – Instrumente im Vordergrund</title>
+  <!-- drum kit centre -->
+  <path fill="#171a2a" d="M425 300h110v12H425zM438 312h84v75h-84z"/><path fill="#dc6c59" d="M447 320h66v58h-66z"/>
+  <path fill="#f7ad55" d="M403 292h52v8h-52zm102 0h52v8h-52z"/><path fill="#f0d3a2" d="M405 286h48v8h-48zm104 0h48v8h-48z"/>
+  <path fill="#171a2a" d="M419 300h8v92h-8zm108 0h8v92h-8zm-78 86h8v29h-8zm54 0h8v29h-8z"/>
+  <!-- keyboard rig right -->
+  <path fill="#171a2a" d="M675 318h156v26H675zM690 344h8v70h-8zm116 0h8v70h-8z"/>
+  <path fill="#f0d3a2" d="M684 323h12v16h-12zm16 0h12v16h-12zm16 0h12v16h-12zm16 0h12v16h-12zm16 0h12v16h-12zm16 0h12v16h-12zm16 0h12v16h-12zm16 0h12v16h-12z"/>
+  <path fill="#39324d" d="M694 365h110v10H694z"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" shape-rendering="crispEdges">
+  <title>Pixelband – Bühnenbasis</title>
+  <rect width="960" height="540" fill="#161329"/>
+  <rect x="20" y="38" width="920" height="382" fill="#282247"/>
+  <path fill="#702b55" d="M20 38h126v382H20zm794 0h126v382H814z"/>
+  <path fill="#a34162" d="M38 38h28v382H38zm72 0h18v382h-18zm704 0h18v382h-18zm62 0h28v382h-28z"/>
+  <path fill="#f7ad55" d="M165 72h48v20h-48zm582 0h48v20h-48z"/>
+  <path fill="#ffe29b" d="M174 92h30v92h-30zm-10 92h50v22h-50zm582-92h30v92h-30zm-10 92h50v22h-50z" opacity=".8"/>
+  <path fill="#4c3a68" d="M248 50h22v350h-22zm442 0h22v350h-22z"/>
+  <path fill="#3c3157" d="M278 74h404v16H278z"/>
+  <path fill="#dc6c59" d="M306 74h42v16h-42zm306 0h42v16h-42z"/>
+  <path fill="#161329" d="M0 400h960v140H0z"/>
+  <path fill="#503b48" d="M0 416h960v18H0z"/>
+  <path fill="#8b5b48" d="M0 434h960v106H0z"/>
+  <path fill="#bd7b50" d="M0 434h960v10H0z"/>
+  <path fill="#6e4650" d="M0 492h960v12H0z"/>
+  <!-- amplifier left -->
+  <rect x="115" y="333" width="100" height="82" fill="#171a2a"/><rect x="123" y="341" width="84" height="58" fill="#463d57"/>
+  <path fill="#bd7b50" d="M132 351h10v8h-10zm17 0h10v8h-10zm17 0h10v8h-10zm17 0h10v8h-10z"/>
+  <rect x="127" y="370" width="76" height="20" fill="#25253c"/>
+  <!-- floor lights -->
+  <path fill="#f7ad55" d="M72 406h28v8H72zm788 0h28v8h-28z"/><path fill="#dc6c59" d="M278 406h28v8h-28zm376 0h28v8h-28z"/>
+</svg>

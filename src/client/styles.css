@@ -91,6 +91,10 @@ select {
   padding: 60px 20px;
 }
 
+.gate[hidden] {
+  display: none;
+}
+
 .gate-card {
   width: min(440px, 100%);
   background: var(--panel);
@@ -132,6 +136,37 @@ button.primary {
 
 button.primary:hover {
   filter: brightness(1.08);
+}
+
+/* --- Pixel band ----------------------------------------------------------- */
+
+#pixel-band {
+  display: flex;
+  justify-content: center;
+  padding: 18px 22px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+}
+
+.pixel-band {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.pixel-band .layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pixel-band .layer:first-child {
+  position: relative;
+  display: block;
 }
 
 /* --- Transport ---------------------------------------------------------- */

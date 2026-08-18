@@ -16,6 +16,7 @@ import {
   type SongInfo,
 } from "../shared/protocol";
 import { buildInstrument, type InstrumentView } from "./instruments";
+import { PixelBand } from "./pixelband";
 import { StreamPlayer } from "./player";
 
 const $ = <T extends HTMLElement>(id: string): T => {
@@ -25,6 +26,7 @@ const $ = <T extends HTMLElement>(id: string): T => {
 };
 
 const player = new StreamPlayer();
+const pixelBand = new PixelBand();
 
 let socket: WebSocket | null = null;
 let myId = "";
@@ -130,6 +132,7 @@ function applyState(state: RoomState): void {
     mountInstrument();
   }
 
+  pixelBand.update(state);
   renderRoles(state);
   renderPlayers(state);
   renderTransport(state);
@@ -356,6 +359,7 @@ async function enter(): Promise<void> {
 
   $("gate").hidden = true;
   $("main").hidden = false;
+  $("pixel-band").replaceChildren(pixelBand.el);
   $("room-name").textContent = room;
   setStatus("connecting…", "idle");
   connect(room, name);
